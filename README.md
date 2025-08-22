@@ -137,7 +137,7 @@ graph LR
 
 ```mermaid
 flowchart TD
-    A[approve.md] --> B[/init命令]
+    A[approve.md] --> B['/init命令']
     B --> C[CLAUDE.md]
     C --> D[项目初始化完成]
 ```
