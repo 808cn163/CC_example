@@ -8,6 +8,8 @@
 - 必须存储重要知识
 - 必须执行检查清单
 - 必须遵循质量标准
+- 每次更新,都要按照github惯例,用中文更新README.md文件。包括但不限于:项目简介、部署方法、部署命令。
+- 每次都要在 CHANGELOG.md 文件里增加此次更改的日志记录。
 - Please add the appropriate logging information so that you [the agent] can use that log output to figure out this issue.
 
 ## MANDATORY WORKFLOWS
@@ -85,4 +87,5 @@
 ══════════════
 
 强制触发器：会话开始→检查约束，工具调用前→检查流程，回复前→验证清单
+
 自我改进：成功→存储，失败→更新规则，持续→优化策略
