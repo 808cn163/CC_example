@@ -133,6 +133,7 @@ graph LR
 请你用专业的角度来分析，并且问我问题来补充完善这个需求。直到我们互相都满意为止
 你还有哪些条件需要确认，以及需要增加、补充哪些信息。
 ```
+整理需求内容，保存为`approve.md`。
 
 ### 步骤1：生成项目配置文件
 
@@ -145,13 +146,6 @@ graph LR
 
 #### 输出结果
 - **产出文件**：`CLAUDE.md`（AI开发配置文档）
-
-```mermaid
-flowchart TD
-    A[approve.md] --> B['/init命令']
-    B --> C[CLAUDE.md]
-    C --> D[项目初始化完成]
-```
 
 CLAUDE.md文件会有一个更新操作，自动添加了项目相关的内容。
 
@@ -192,34 +186,6 @@ CLAUDE.md文件会有一个更新操作，自动添加了项目相关的内容�
   - `README.md`文件
   - 部署脚本
 
-```mermaid
-classDiagram
-    class ProjectStructure {
-        +CLAUDE.md
-        +design.md
-        +README.md
-        +src/
-        +tests/
-        +docs/
-    }
-    
-    class CodeGeneration {
-        +generateBackend()
-        +generateFrontend()
-        +generateTests()
-        +generateDocs()
-    }
-    
-    class Deployment {
-        +deploymentScript
-        +configFiles
-        +dockerFiles
-    }
-    
-    ProjectStructure --> CodeGeneration
-    CodeGeneration --> Deployment
-```
-
 ### 步骤4：代码测试与验证
 
 #### 输入要求
@@ -249,12 +215,6 @@ classDiagram
 
 ```
 确认前面的所有修改和"design.md"的一致性。如果以前"design.md"定义模糊的地方，请更新到设计文档。确保文档把前端和后端的API接口定义的清楚和明白。
-```
-
-### 经验记录提示词
-
-```
-把经验和测试发现的问题更新到"test.md"中，作必要的记录。
 ```
 
 ## 最佳实践建议
