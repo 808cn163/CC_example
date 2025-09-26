@@ -59,34 +59,7 @@ graph TD
 ### 文档驱动开发示例
 
 文档驱动开发（Document-Driven Development）强调在编码之前先完善文档，确保开发方向明确。
-
-#### 核心文档模板
-
-| 文档类型 | 文件名 | 用途 | 重要程度 |
-|----------|--------|------|----------|
-| API接口设计 | api-design.md | 定义接口规范 | ⭐⭐⭐⭐⭐ |
-| 功能模块技术设计 | module-design.md | 模块架构设计 | ⭐⭐⭐⭐ |
-| 用户管理模块 | 01-user-management.pdf | 具体功能实现 | ⭐⭐⭐ |
-
-```mermaid
-sequenceDiagram
-    participant PM as 产品经理
-    participant DEV as 开发工程师
-    participant AI as Claude AI
-    participant QA as 测试工程师
-    
-    PM->>DEV: 提供需求文档
-    DEV->>AI: 基于需求生成API设计
-    AI->>DEV: 返回API设计文档
-    DEV->>AI: 生成模块设计文档
-    AI->>DEV: 返回技术设计
-    DEV->>QA: 提供设计文档
-    QA->>DEV: 反馈测试建议
-```
-
-### 测试驱动开发示例
-
-测试驱动开发（Test-Driven Development）通过先写测试用例，再编写实现代码的方式，确保代码质量。
+通过先写需求文档，再AI辅助编写架构文档，最后AI实现代码的方式，确保代码质量。
 
 #### 核心文件结构
 
